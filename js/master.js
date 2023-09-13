@@ -1,18 +1,3 @@
-// scroll reviews
-
-const scrollableArea = document.getElementsByClassName("review-container")[0];
-const scrollAmount =
-  document.getElementsByClassName("reviews-box")[0].offsetWidth;
-const rightScrollButton = document.getElementsByClassName("fa-angle-right")[1];
-const leftScrollButton = document.getElementsByClassName("fa-angle-left")[0];
-
-rightScrollButton.addEventListener("click", () => {
-  scrollableArea.scrollLeft += scrollAmount + 40;
-});
-leftScrollButton.addEventListener("click", () => {
-  scrollableArea.scrollLeft -= scrollAmount + 40;
-});
-
 //navbar services
 const servicesLink = document.querySelector(".navbar .container ul li.sub a");
 servicesLink.onclick = (e) => {
@@ -20,13 +5,6 @@ servicesLink.onclick = (e) => {
 };
 
 const prev = document.querySelectorAll(".navbar ul li.sub ul li a");
-
-// prev.forEach((element) => {
-//   console.log(element)
-//   element.onclick = (event) => {
-//     // event.preventDefault();
-//   };
-// });
 
 const servicesButton = document.querySelector(".navbar .container ul li.sub");
 const arrowDown = document.querySelector(
@@ -65,11 +43,5 @@ document.body.addEventListener("click", (event) => {
     navbarButton.classList.remove("clicked");
   }
 });
-// document.body.addEventListener("click", (event) => {
-//   console.log(event.target)
-//   event.stopPropagation();
-//   if (event.target !== navbar && event.target !== navbarButton) {
-//     navbar.classList.toggle("clicked");
-//     navbarButton.classList.toggle("clicked");
-//   }
-// },true);
+
+

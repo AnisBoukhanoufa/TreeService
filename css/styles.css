@@ -30,7 +30,8 @@ ul {
     list-style: none;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: none;
 }
 
@@ -128,6 +129,20 @@ h1 {
     height: 46px;
     width: 100%;
     background: white;
+}
+
+@media (max-width: 767px) {
+    .wave {
+        display: none;
+    }
+
+    .white-wave {
+        display: none;
+    }
+
+    .separator {
+        display: none;
+    }
 }
 
 .white-wave::before,
@@ -779,6 +794,7 @@ a.button:hover {
         flex-wrap: wrap;
         gap: 60px;
         justify-content: center;
+        padding-bottom: 60px;
     }
 
     .why-us .container .box {
@@ -1058,8 +1074,9 @@ a.button:hover {
         display: none;
     }
 }
+
 @media (max-width: 767px) {
-    .footer .container{
+    .footer .container {
         flex-direction: column;
         gap: 40px;
     }
@@ -1110,4 +1127,176 @@ a.button:hover {
 
 .footer .container .localisation h2 {
     margin-bottom: 10px;
+}
+
+.contact-banner {
+    width: fit-content;
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+    background-image: url("../images/vintage-pink-telephone-composition.jpg");
+    background-color: var(--header-color);
+    color: white;
+    background-size: cover;
+    position: relative;
+    background-position: 0 20%;
+}
+
+.contact-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+
+}
+
+.contact-banner h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-banner p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-section {
+    padding: 70px 0;
+
+}
+
+.contact-section .container {
+    display: flex;
+    gap: 60px;
+}
+
+
+
+.contact-section .container>div {
+    flex: 1;
+}
+
+.contact-section .container  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--header-color);
+}
+
+@media (max-width:767px) {
+    .contact-section .container {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .contact-section .container .additional-details {
+        text-align: center;
+    }
+    .contact-section .container h2{
+        text-align: center;
+    }
+
+    .contact-banner h1 {
+        font-size: 40px;
+    }
+
+    .contact-banner p {
+        font-size: 16px;
+    }
+
+}
+
+.contact-section .container .additional-details p {
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.contact-section .container .additional-details p.text {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-section .container .additional-details h3 {
+    color: var(--header-color);
+    margin-bottom: 10px;
+}
+
+.contact-section .container .additional-details a {
+    margin-bottom: 10px;
+}
+
+.contact-section .container .additional-details h3:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.contact-section .container .additional-details .media {
+    margin-top: 30px;
+}
+
+.contact-section .container .additional-details .media a {
+    margin-right: 20px;
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.contact-section .container .form-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .container .form-details form input,
+.contact-section .container .form-details form textarea {
+    margin: 10px 0;
+    
+    border: 1px solid #ddd;
+    background-color: var(--secondary-color);
+    resize: none;
+    padding: 10px;
+    color: white;
+}
+
+.contact-section .container .form-details form input {
+    height: 55px;
+}
+
+.contact-section .container .form-details form input::placeholder,
+.contact-section .container .form-details form textarea::placeholder {
+    color: white;
+    transition: .3s;
+    opacity: 1;
+
+}
+
+.contact-section .container .form-details form input:focus,
+.contact-section .container .form-details form textarea:focus {
+    border: 2px solid var(--header-color);
+}
+
+.contact-section .container .form-details form input:focus::placeholder,
+.contact-section .container .form-details form textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.contact-section .container .form-details form input[type=submit] {
+    width: fit-content;
+    padding: 15px 40px;
+    align-self: flex-end;
+    height: fit-content;
+    background-color: var(--header-color);
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.contact-section .container .form-details form input[type=submit]:hover {
+    background-color: var(--main-color);
 }
