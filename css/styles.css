@@ -1185,7 +1185,7 @@ a.button:hover {
     flex: 1;
 }
 
-.contact-section .container  h2 {
+.contact-section .container h2 {
     font-size: 28px;
     margin-bottom: 10px;
     color: var(--header-color);
@@ -1200,7 +1200,8 @@ a.button:hover {
     .contact-section .container .additional-details {
         text-align: center;
     }
-    .contact-section .container h2{
+
+    .contact-section .container h2 {
         text-align: center;
     }
 
@@ -1256,7 +1257,7 @@ a.button:hover {
 .contact-section .container .form-details form input,
 .contact-section .container .form-details form textarea {
     margin: 10px 0;
-    
+
     border: 1px solid #ddd;
     background-color: var(--secondary-color);
     resize: none;
@@ -1299,4 +1300,206 @@ a.button:hover {
 
 .contact-section .container .form-details form input[type=submit]:hover {
     background-color: var(--main-color);
+}
+
+.contact-banner.about {
+    background-image: url("../images/closeup-shot-small-green-leaves-bush.jpg");
+}
+
+.about-us {
+    padding: 60px 0;
+}
+
+.about-us .container {
+    display: flex;
+    gap: 60px;
+}
+
+.about-us .container .text h1 {
+    color: var(--header-color);
+    margin-bottom: 20px;
+}
+
+.about-us .container .text p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.about-us .container img {
+    width: 40%;
+}
+
+@media (max-width: 991px) {
+    .about-us .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us .container img {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-us .container img {
+        max-width: 90%;
+    }
+
+    .about-us .container .text {
+        text-align: center;
+    }
+
+    .about-us .container .text h1 {
+        text-align: center;
+    }
+}
+
+
+
+.contact-banner.remove {
+    background-image: url("../images/closeup-lumberjack-with-chainsaw-forest.jpg");
+    background-position: 0 35%;
+}
+
+.tree-remove {
+    padding: 60px 0;
+}
+
+.tree-remove .container .text-one {
+    display: flex;
+    gap: 60px;
+}
+
+
+.tree-remove .container .text-one img {
+    max-width: 30%;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+
+.tree-remove .container .text-one .part>p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+
+.tree-remove .container .text-one .part h2 {
+    color: var(--header-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tree-remove .container .text-one .part h2:nth-of-type(1) {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.tree-remove .container .text-one .part .box-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+@media (max-width: 991px) {
+    .tree-remove .container .text-one {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tree-remove .container .text-one img {
+        max-width: 70%;
+    }
+
+    .tree-remove .container .text-one .part .box-container {
+        justify-content: center;
+    }
+}
+
+
+.tree-remove .container .text-one .part .box-container .box {
+    width: calc(100% / 4 - 40px);
+    background-color: #f6F6F6;
+    display: flex;
+    padding: 10px 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+@media (max-width: 767px) {
+    .tree-remove .container .text-one .part .box-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .tree-remove .container .text-one .part .box-container .box {
+        width: 70%;
+    }
+
+    .tree-remove .container .text-one img {
+        max-width: 90%;
+    }
+}
+
+.tree-remove .container .text-one .part .box-container .box p {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+
+.contact-banner.plant {
+    background-image: url("../images/planting-trees-as-part-reforestation-process.jpg");
+    background-position: 0 65%;
+}
+
+.box-container.plant .box {
+    width: calc(100% / 3) !important;
+}
+
+@media (max-width:767px) {
+    .box-container.plant .box img {
+        max-width: 140px;
+    }
+
+    .box-container.plant .box p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .box-container.plant .box {
+        width: 80% !important;
+    }
+}
+
+.box-container.plant {
+    margin-bottom: 0px !important;
+}
+
+.tree-remove.plant .container .text-one.first .part {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.tree-remove.plant .container .text-one.first .part h3 {
+    color: var(--header-color);
+    font-size: 21px;
+    margin: 15px 0 10px;
+}
+
+.contact-banner.pruning {
+    background-image: url("../images/close-up-gardener-taking-care-plants.jpg");
+    background-position: 0 35%;
 }
