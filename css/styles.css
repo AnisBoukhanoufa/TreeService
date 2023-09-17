@@ -725,7 +725,7 @@ a.button:hover {
     .services .container .box {
         width: 80%;
     }
-
+ 
     .services .container .box:nth-child(2) {
         transform: translatey(0);
     }
@@ -738,6 +738,8 @@ a.button:hover {
     margin-top: 20px;
     height: 180px;
     width: 100%;
+    object-fit: contain;
+    
 }
 
 .services .container .box h2 {
@@ -1328,6 +1330,7 @@ a.button:hover {
 
 .about-us .container img {
     width: 40%;
+    min-width: 300px;
 }
 
 @media (max-width: 991px) {
