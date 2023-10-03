@@ -188,6 +188,11 @@ h1 {
     position: relative;
 }
 
+.navbar .container img {
+    height: 60px;
+    object-fit: contain;
+}
+
 .navbar .container ul {
     display: flex;
     align-items: center;
@@ -474,6 +479,7 @@ h1 {
     display: flex;
 }
 
+
 .landing .left {
     width: 30%;
     background-image: url(../images/asian-man-cutting-trees-using-electrical-chainsaw.jpg);
@@ -725,7 +731,7 @@ a.button:hover {
     .services .container .box {
         width: 80%;
     }
- 
+
     .services .container .box:nth-child(2) {
         transform: translatey(0);
     }
@@ -739,7 +745,7 @@ a.button:hover {
     height: 180px;
     width: 100%;
     object-fit: contain;
-    
+
 }
 
 .services .container .box h2 {
@@ -1046,6 +1052,20 @@ a.button:hover {
     min-height: 100%;
     position: relative;
     text-align: left;
+}
+
+.footer .container .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.footer .container .social img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }
 
 
@@ -1480,6 +1500,7 @@ a.button:hover {
         font-size: 18px;
         margin-bottom: 10px;
     }
+
     .box-container.plant .box {
         width: 80% !important;
     }
