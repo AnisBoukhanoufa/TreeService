@@ -1527,6 +1527,7 @@ a.button:hover {
   height: fit-content;
   -o-object-fit: cover;
      object-fit: cover;
+     aspect-ratio: 5/4;
 }
 
 .tree-remove .container .text-one .part > p {
