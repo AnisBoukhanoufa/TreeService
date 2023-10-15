@@ -290,6 +290,10 @@ h1 {
         transform: rotate(0deg);
     }
 
+    .navbar .container ul li{
+        height: fit-content;
+      }
+      
     .navbar .container ul li .nav-serv {
         position: relative;
         display: flex;

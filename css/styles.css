@@ -311,6 +311,11 @@ h1 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+.navbar .container ul li {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .navbar .container ul li .nav-serv {
     position: relative;
     display: -webkit-box;
@@ -329,6 +334,7 @@ h1 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+
   .navbar .container ul li .nav-serv {
     position: relative;
     display: -webkit-box;
