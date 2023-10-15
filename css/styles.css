@@ -1522,12 +1522,13 @@ a.button:hover {
 .tree-remove .container .text-one img {
   max-width: 30%;
   border-radius: 12px;
-  height: -webkit-fit-content;
+  max-height: 90vh;
+  /* height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   -o-object-fit: cover;
-     object-fit: cover;
-     aspect-ratio: 5/4;
+     object-fit: cover; */
+     
 }
 
 .tree-remove .container .text-one .part > p {
