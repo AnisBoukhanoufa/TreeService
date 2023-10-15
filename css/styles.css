@@ -19,9 +19,9 @@ body {
 :root {
   --header-color: #355e3b;
   --main-color: #7cc55f;
-  --secondary-color: #7cc55fDD;
+  --secondary-color: #7cc55fdd;
   --text-color: #696969;
-  --main-transition: .4s;
+  --main-transition: 0.4s;
 }
 
 ul {
@@ -175,8 +175,8 @@ h1 {
 /* globale reles end */
 .navbar {
   background-color: white;
-  -webkit-box-shadow: 0px 0px 10px #Ccc;
-          box-shadow: 0px 0px 10px #Ccc;
+  -webkit-box-shadow: 0px 0px 10px #ccc;
+          box-shadow: 0px 0px 10px #ccc;
   height: 60px;
   position: relative;
   z-index: 10;
@@ -233,7 +233,7 @@ h1 {
 }
 
 .navbar .container ul li a {
-  color: #228B22;
+  color: #228b22;
   font-size: 18px;
   font-weight: 500;
   -webkit-transition: var(--main-transition);
@@ -1525,6 +1525,8 @@ a.button:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .tree-remove .container .text-one .part > p {
@@ -1570,6 +1572,11 @@ a.button:hover {
   }
   .tree-remove .container .text-one img {
     max-width: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .tree-remove .container .text-one .part .box-container {
     -webkit-box-pack: center;
@@ -1579,7 +1586,7 @@ a.button:hover {
 }
 .tree-remove .container .text-one .part .box-container .box {
   width: calc(25% - 40px);
-  background-color: #f6F6F6;
+  background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1613,6 +1620,11 @@ a.button:hover {
   }
   .tree-remove .container .text-one img {
     max-width: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 .tree-remove .container .text-one .part .box-container .box p {
