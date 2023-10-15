@@ -311,7 +311,7 @@ h1 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-.navbar .container ul li {
+  .navbar .container ul li {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -321,6 +321,8 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 0;
+    right: 0;
     background-color: white;
     border-radius: 0;
   }
@@ -334,7 +336,6 @@ h1 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-
   .navbar .container ul li .nav-serv {
     position: relative;
     display: -webkit-box;
@@ -1670,3 +1671,4 @@ a.button:hover {
   background-image: url("../images/close-up-gardener-taking-care-plants.jpg");
   background-position: 0 35%;
 }
+/*# sourceMappingURL=styles.css.map */
