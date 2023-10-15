@@ -192,6 +192,11 @@ h1 {
     height: 60px;
     object-fit: contain;
 }
+@media (max-width:767px) {
+    .navbar .container img{
+        width: 200px;
+    }
+}
 
 .navbar .container ul {
     display: flex;
